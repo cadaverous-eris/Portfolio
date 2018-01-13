@@ -52,12 +52,27 @@ main hr {
 	font-size: 18px;
 }
 
-.portfolio-col {
-	
+.portfolio-item {
+	padding: 20px;
 }
 
-.portfolio-item {
-	
+.portfolio-item a {
+		color: #05eafa;
+}
+.portfolio-item a:active {
+		color: #05eafa;
+}
+.portfolio-item a:hover {
+		color: #05eafa;
+}
+.portfolio-item a:visited {
+		color: #05eafa;
+}
+
+.portfolio-item img {
+	width: 100%;
+	height: auto;
+	border: 2px solid #490e61;
 }
 
 .footer {
