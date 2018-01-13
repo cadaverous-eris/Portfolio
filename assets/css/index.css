@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 
 body *:focus {
 	outline: none !important;
@@ -12,9 +13,13 @@ html {
 }
 
 body {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 	background-color: #282828;
 	font-family: 'Titillium Web', sans-serif;
+}
+
+h2, h3 {
+	font-family: 'Righteous', sans-serif;
 }
 
 .navbar {
@@ -32,21 +37,35 @@ body {
 	height: 30px;
 	width: auto;
 	margin: 2px;
+	-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
 }
 .logo-image:hover {
 	height: 32px;
 	width: auto;
 	margin: 1px;
+	animation-name: bounce;
+  -moz-animation-name: bounce;
 }
 
 body > .container {
-  padding: 80px 15px 0;
+  padding: 40px 15px 0;
 	color: #ffffff;
 }
 
 main hr {
 	border-color: #fa056f;
 	margin: 40px 0px;
+}
+
+.effect-div {
+	position: relative;
 }
 
 #about-row > div > img {
@@ -65,13 +84,9 @@ main hr {
 .portfolio-item a {
 		color: #05eafa;
 }
-.portfolio-item a:active {
-		color: #05eafa;
-}
+.portfolio-item a:active,
+.portfolio-item a:visited,
 .portfolio-item a:hover {
-		color: #05eafa;
-}
-.portfolio-item a:visited {
 		color: #05eafa;
 }
 
@@ -87,10 +102,6 @@ main hr {
 }
 .form-control:focus {
 	border: 2px solid #fa056f;
-}
-
-.form-control:hover ~ label {
-	background-color: #05eafa;
 }
 
 textarea {
@@ -137,4 +148,22 @@ textarea {
 	background: #490e61;
 	font-size: 14px;
 	text-align: center;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+	60% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
 }
