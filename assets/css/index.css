@@ -86,18 +86,25 @@ main hr {
 }
 
 .portfolio-item a {
-		color: #05eafa;
+	color: #05eafa;
 }
 .portfolio-item a:active,
 .portfolio-item a:visited,
 .portfolio-item a:hover {
-		color: #05eafa;
+	color: #05eafa;
 }
 
 .portfolio-item img {
 	width: 100%;
 	height: auto;
 	border: 2px solid #490e61;
+}
+
+.contact-email,
+.contact-email:active,
+.contact-email:visited,
+.contact-email:hover {
+	color: #05eafa;
 }
 
 .form-control {
