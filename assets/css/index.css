@@ -72,8 +72,11 @@ main hr {
 	border: 2px solid #fa056f;
 }
 
+#about-row > div.img-col {
+	text-align: center;
+}
 #about-row > div > img {
-	width: 360px;
+	width: 350px;
 	height: auto;
 }
 
@@ -93,10 +96,13 @@ main hr {
 .portfolio-item a:hover {
 	color: #05eafa;
 }
+.portfolio-item div.project-name {
+	color: #05eafa;
+}
 
 .portfolio-item img {
-	width: 100%;
-	height: auto;
+	height: 180px;
+	width: auto;
 	border: 2px solid #490e61;
 }
 
