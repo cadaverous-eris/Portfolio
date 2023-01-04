@@ -35,7 +35,7 @@ function init() {
 	renderer.setSize($(window).width(), $(window).width() * (5 / 16));
 	
 	$('.effect-div').append($('<h2>')
-		.text('Hi, I\'m Stuart Lindstrom, a full stack web developer.')
+		.html('Eris Lindstrom<br/>full stack web developer')
 		.css('color', '#ffffff')
 		.css('text-align', 'center')
 		.css('position', 'absolute')
